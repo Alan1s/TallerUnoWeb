@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Formulario</title>
+        <link rel="stylesheet" href="./css/forms.css">
+    </head>
+
+    <body id = "dummybodyid" style="font-family: 'Helvetica';">
+
+        <!--FORMULARIO -->
+
+<form>
+  
+    <fieldset id="form">
+      <legend>Contactenos</legend>
+    <div>
+      <label> Nombres: </label>
+      <input class ="centrado" id="nuevoNombre" type="text" name="names" placeholder="Juan Guillermo" required  maxlength="100"> </input>
+      <!-- CONTADOR PARA QUE NO SE PASE DE 100-->
+      <span id="contadorNombre">0/100</span>
+    
+       <!-- MENSAJE DE ERROR -->
+      <span id="mensajesErrorNombre" class="textError ocultar">
+         No más de 100 caracteres
+      </span>
+    </div>
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input id="nuevoApellido" type="text" name = "apellidos" placeholder="Erasmo Perez" required maxlength="100"></input>
+          
+            <span id="contadorApellido">0/100</span>
+          
+            <span id="mensajesErrorApellido" class="textError ocultar">
+              No más de 100 caracteres
+            </span>
+        </div>
+        <div>
+            <label for="correos">Correos:</label>
+            <input id="nuevoCorreos" type="email" name = "correos" placeholder="ejemplo@.com" required maxlength="100"></input>
+            
+            <span id="contadorCorreo">0/100</span>
+          
+            <span id="mensajesErrorCorreos" class="textError ocultar">
+              No más de 100 caracteres, debe contener '@' y al menos un punto, sin espacios ni caracteres especiales y todo en mayúsculas.
+      <!--NO SE HA PODIDO MANDAR EL MENSAJE DE ERROR APROPIADO-->
+            </span>
+        </div>
+        <div>
+            <label for="semestres">Semestre:</label>
+            <select id = "nuevoSemestres">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              </select>         
+             <span id="mensajesErrorSemestres" class="textError ocultar">
+              Escoge una opcion diferente a 0
+             </span>
+        </div>
+        <div>
+        <label for="descripciones">Descripcion:</label></p>
+        <textarea id="nuevaDescripcion" name="descripciones" rows="4" cols="50" required></textarea>
+        <span id="mensajesErrorDescripcion" class = "textError ocultar">
+          Este segmento es obligatorio
+        </span>
+         
+        </div>
+  </form>
+  <script src="./js/formulario.js"></script>
+
+  <a href="/menu.html" class="button button1">Atrás</a>
+
+    </body>
+</html>

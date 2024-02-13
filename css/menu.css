@@ -1,0 +1,19 @@
+header {
+    background: rgb(169, 240, 227 );
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+body{
+    background: rgb(226, 247, 246 );
+}
+
+.justify {
+    text-align: justify;
+}
+
+.titulo-centrado {
+    text-align: center;
+}
+

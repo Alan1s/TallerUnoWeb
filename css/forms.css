@@ -1,0 +1,55 @@
+.textError{
+    color:red;
+    text-shadow: 4px 4px 3px #77f;
+  }
+  
+  .ocultar{
+    display:none;
+  }
+  
+  #form {
+      border:1px solid #990000;
+      width:450px;
+      margin:auto;
+  }
+  #form legend{
+      font-weight:bold;
+      font-size:12px;
+  }
+
+  body{
+    background: rgb(226, 247, 246 );
+ }
+
+ .button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+  }
+  
+  .button1:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .centrado {
+    position: relative;
+    top: 50%;
+  }
+
+  label{
+    width: 400px;
+  }
