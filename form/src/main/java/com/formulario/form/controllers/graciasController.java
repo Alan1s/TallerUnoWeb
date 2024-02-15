@@ -12,5 +12,4 @@ public class graciasController {
     public String gracias() {
         return ("gracias.html");
     }
-
 }

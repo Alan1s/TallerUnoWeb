@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Formulario</title>
         <link rel="stylesheet" href="/css/forms.css">
@@ -10,8 +9,7 @@
 
         <!--FORMULARIO -->
 
-<form>
-  
+<form action="/form/submit" th:action="@{/form/submit}" method="post">
     <fieldset id="form">
       <legend>Contactenos</legend>
     <div>
@@ -76,12 +74,17 @@
         <span id="mensajesErrorDescripcion" class = "textError ocultar">
           Este segmento es obligatorio
         </span>
-         
+        </div>
+        <div>
+          <button type = "submit"> Enviar </button>
         </div>
   </form>
   <script src="/js/formulario.js"></script>
 
   <a href="/form/menu" class="button button1">Atrás</a>
 
+  <div>
+    <p th:text="${graciasMensaje}"></p>
+  </div>
     </body>
 </html>
